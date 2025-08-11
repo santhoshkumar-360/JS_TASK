@@ -1,0 +1,37 @@
+.hero {
+    background: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero h1 span {
+    color: #0d6efd;
+}
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    border-radius: 15px;
+}
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.skill-box {
+    background-color: #ffffff;
+    border: 2px solid #0d6efd;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.skill-box h5 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+footer {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+

@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #333;
+  color: hwb(180 98% 1%);
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: hsl(180, 45%, 98%);
+}
+
+.hero {
+  background-color: hsl(185, 66%, 77%);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.hero p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f1570a;
+  color: #fff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section p {
+  color: #666;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.about-image {
+  flex: 1;
+  text-align: center;
+  border-image: auto;
+  border-color: #0f0e0e;
+    }
+    .about-image img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      border-color: #0f0e0e;
+    }
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background-color: #7df8efa1;
+  margin: 5px auto;
+  padding: 8px;
+  width: 200px;
+  border-radius: 4px;
+  border-color: #0f0e0e;
+}
+.project-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-box {
+  background-color: #7df8efa1;
+  border: 5px solid #0f0e0e;
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  
+}
+
+form {
+  background: #7df8efa1;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

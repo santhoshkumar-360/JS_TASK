@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Donation</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#causes">Causes</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#volunteers">Volunteers</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#donation-form"class="donation-form">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero"class="hero">
+      <div class="hero-content">
+        <h1>Lend a Hand, Save a Life</h1>
+        <button class="donate-btn"><a href="#donation-form">Donation</a></button>
+      </div>
+    </section>
+
+    <section id="causes" class="causes">
+      <h2>Our Causes</h2>
+      <div class="cause-list">
+        <div class="cause-card">
+          <img src="img1.jpg" alt="Food Aid" />
+          <p>Food Aid</p>
+        </div>
+        <div class="cause-card">
+          <img src="img2.jpg" alt="Education Kits" />
+          <p>Education Kits</p>
+        </div>
+        <div class="cause-card">
+          <img src="img3.jpeg" alt="Medical Aid" />
+          <p>Medical Aid</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="impact">
+      <h2>Your Impact in Numbers</h2>
+      <div class="impact-stats">
+        <div class="stat">
+          <h3>10K+</h3>
+          <p>Meals Served</p>
+        </div>
+        <div class="stat">
+          <h3>5K+</h3>
+          <p>Education Kits Distributed</p>
+        </div>
+        <div class="stat">
+          <h3>3K+</h3>
+          <p>Medical Kits Provided</p>
+        </div>
+        </section>
+
+    <section id="volunteers" class="Volunteers">
+      <center><h2>volunteer is work</h2></center>
+        <div class="volunteers-stat">
+          <div class="stat">
+            <h3>100+</h3>
+            <p>Active Volunteers</p>
+          </div>
+          <div class="stat">
+            <h3>150+</h3>
+            <p>Wanted intrested volunteer</p>
+
+          </div>
+        </div>
+      </section>
+
+    <div id="blog" class="blog">
+        <h2>Our Blog Stats</h2>
+        <div class="blog-stat">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Articles Published</p>
+            </div>
+            <div class="stat">
+                <h3>10K+</h3>
+                <p>Happy Readers</p>
+            </div>
+            <div class="stat">
+                <h3>2M+</h3>
+                <p>Total Views</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="donation-form"class="donation-form">
+      <h2>Make a Donation</h2>
+      <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <label for="amount">Donation Amount</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter Amount" required />
+
+        <label for="cause">Choose a Cause</label>
+        <select id="cause" name="cause" required>
+          <option value="">--Please Select--</option>
+          <option value="food">Food Aid</option>
+          <option value="education">Education Kits</option>
+          <option value="medical">Medical Aid</option>
+        </select>
+
+        <button type="submit" class="donate-btn">Donate Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div><h3>santhoshkumar@copyrights</h3>
+    <h3>Thanking you</h3></div>
+    
+  </footer>
+
+</body>
+</html>
