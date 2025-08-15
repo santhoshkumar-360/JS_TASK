@@ -1,0 +1,26 @@
+function validatePassword() {
+    let password = document.getElementById("password").value;
+    let result = document.getElementById("result");
+
+    // Password validation: At least 8 chars, one uppercase, one number
+    let minLength = /.{8,}/;
+    let hasUppercase = /[A-Z]/;
+    let hasNumber = /\d/;
+
+    if (!minLength.test(password)) {
+        result.textContent = "Password must be at least 8 characters long.";
+        result.style.color = "red";
+    } 
+    else if (!hasUppercase.test(password)) {
+        result.textContent = "Password must contain at least one uppercase letter.";
+        result.style.color = "red";
+    } 
+    else if (!hasNumber.test(password)) {
+        result.textContent = "Password must contain at least one number.";
+        result.style.color = "red";
+    } 
+    else {
+        result.textContent = "Password is valid.";
+        result.style.color = "green";
+    }
+}
