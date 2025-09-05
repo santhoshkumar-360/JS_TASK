@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Summary Tool</title>
+    <style>
+        body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  animation: bgFade 10s infinite alternate;
+}
+
+@keyframes bgFade {
+  0% { background: linear-gradient(135deg, #74ebd5, #ACB6E5); }
+  100% { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+h2:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+textarea {
+  width: 90%;
+  max-width: 650px;
+  height: 160px;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #888;
+  border-radius: 12px;
+  outline: none;
+  resize: none;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+textarea:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 5px 15px rgba(255,111,97,0.4);
+  transform: scale(1.02);
+  background: #fffaf7;
+}
+
+#count {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 650px;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.8;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 12px;
+  column-gap: 25px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#count span {
+  text-align: right;
+  font-weight: bold;
+  color: #ff6f61;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#count span:hover {
+  color: #4a90e2;
+  transform: scale(1.2);
+}
+
+    </style>
+</head>
+<body>
+    <h2>Live Summary Tool</h2>
+    <textarea id="maintext" placeholder="Start typing here"></textarea>
+    <div id="count">
+    Sentence Count: <span id="sentencecount">0</span>
+    Paragraph Count: <span id="paragraphcount">0</span>
+    Most Frequent Word: <span id="freqword">-</span>
+    </div>
+    <script src="./task1.js"></script>
+</body>
+</html>
