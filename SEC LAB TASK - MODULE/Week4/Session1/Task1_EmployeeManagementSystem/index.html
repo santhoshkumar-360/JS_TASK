@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management System</h1>
+    <div class="task-meta">Employee Management System</div>
+    <div id="interactive-area">
+      <div>
+  <input id="name" placeholder="Name" />
+  <input id="position" placeholder="Position" />
+  <input id="salary" placeholder="Salary" />
+  <select id="department">
+    <option value="HR">HR</option>
+    <option value="IT">IT</option>
+    <option value="Sales">Sales</option>
+  </select>
+  <label><input type="checkbox" id="available" checked/> Available</label>
+  <button id="addBtn">Add Employee</button>
+  <button id="reportBtn">Department Report</button>
+  <button id="sortBtn">Sort by Salary</button>
+  <input id="search" placeholder="Search name" />
+  <button id="searchBtn">Search</button>
+  <div id="listArea" style="margin-top:8px;"></div>
+</div>
+
+    </div>
+    <div class="output" id="output-area">Output will appear here (and in console).</div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
